@@ -1,3 +1,4 @@
+'use strict';
 
 var renderer = require("./renderer");
 var queryString = require ("querystring");
@@ -29,4 +30,16 @@ function impsum(request,response,options){
   
 }
 
+function files(request, response){
+   
+    if (request.url.indexOf(".css")!=-1){
+      console.log("inside router.files");
+      var header= {'Content-Type': 'text/css'};
+      response.writeHead(200,header);
+      renderer.serve(request.url,response);
+      response.end();
+    }
+  }
+
 module.exports.home= home;
+module.exports.files= files;

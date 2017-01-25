@@ -1,0 +1,92 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/*BASE*/
+
+body {
+	background-color:#E0E0E0;
+	text-align: center;
+	font-size: 24px;
+	color:white;
+	font-family: "Nunito";
+	margin: 0px;
+	
+}
+h1 {
+	margin-top:0px;
+}
+
+
+/*HEADER*/
+
+.header {
+	margin-top: 0px;
+	margin-bottom: 35px;
+	background-color: #16a085;
+	color:white;
+	font-weight: normal;
+	margin-left:25%; 
+	margin-right:25%;
+	
+	
+}
+.header h1,h4 {
+	margin:0px;
+}
+
+/*FORM*/
+.form {
+	background-color: white;
+	margin-left:35%; 
+	margin-right:35%;
+	
+}
+
+
+.form p{
+
+	padding: 5px;
+	background-color: #16a085 ;
+
+}
+#paragraphs {
+	color: black;
+	background-color: #F0F8FF;
+	font-size: 16px;
+	padding: 9px;
+	margin:0;
+	text-align: center;
+    text-decoration: none;
+	margin-bottom: 5px;
+	border: none;
+
+}
+
+
+#submit_button button{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#submit_button button:hover{
+	background-color: #008CBA;
+}
+
+/*TEXT*/
+#wrapper{
+	background-color: #16a085;
+	margin-left:25%; 
+	margin-right:25%;
+	padding: 8px;
+}
+
+#ipsum{
+	font-size: 16px
+}
