@@ -4,7 +4,6 @@ var renderer = require("./renderer");
 var queryString = require ("querystring");
 
 function home(request,response){
-  console.log(request.url+"  "+request.method);
   if(request.url=="/"){
     if(request.method.toLowerCase()=="get"){
        response.writeHead(200,{"Content-Type":"text/html"})
@@ -33,7 +32,6 @@ function impsum(request,response,options){
 function files(request, response){
    
     if (request.url.indexOf(".css")!=-1){
-      console.log("inside router.files");
       var header= {'Content-Type': 'text/css'};
       response.writeHead(200,header);
       renderer.serve(request.url,response);

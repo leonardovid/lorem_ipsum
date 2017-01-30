@@ -4,7 +4,6 @@ var routes = require("./js/routes.js")
 var port= 3000;
 
 var server = http.createServer(function (request,response){
-  console.log(request.method);
     routes.home(request,response);
     routes.files(request,response);
 
